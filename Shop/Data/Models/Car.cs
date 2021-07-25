@@ -18,5 +18,8 @@ namespace Shop.Data.Models
         public int categoryID { get; set; }
 
         public virtual Category Category { get; set; }
+
+        
     }
+   
 }

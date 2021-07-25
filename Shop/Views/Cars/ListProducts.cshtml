@@ -1,0 +1,16 @@
+﻿    <h2>My Cars</h2>
+    <div class="row mt-5 mb-2">
+        @{
+            foreach (var item in Model.getAllCars)
+            {
+                <div class="col-lg-4">
+                            <h1> @item.Category.categoryName</h1>
+                    <h2>@item.name</h2>
+                    <h3>Price: @item.price.ToString("C2")</h3>                   
+                    <img class="img-thumbnail" height="300" width="300" src="@item.img" />
+                    <p>@item.shortDesc</p>
+                </div>
+            }
+        }
+    </div>
+
